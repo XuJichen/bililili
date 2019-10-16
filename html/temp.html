@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+      <title>title</title>
+      <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+      <style>
+          body{
+
+          }
+      </style>
+  </head>
+  <body>
+<section class="aui-grid">
+            <div class="aui-row">
+                <div class="aui-col-xs-4">
+                    <div class="aui-badge">88</div>
+                    <i class="aui-iconfont aui-icon-home"></i>
+                    <div class="aui-grid-label">首页</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <i class="aui-iconfont aui-icon-gear"></i>
+                    <div class="aui-grid-label">设置</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <i class="aui-iconfont aui-icon-map"></i>
+                    <div class="aui-grid-label">地图</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <i class="aui-iconfont aui-icon-calendar"></i>
+                    <div class="aui-grid-label">日历</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <div class="aui-badge"></div>
+                    <i class="aui-iconfont aui-icon-date"></i>
+                    <div class="aui-grid-label">日期</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <div class="aui-dot"></div>
+                    <i class="aui-iconfont aui-icon-cart"></i>
+                    <div class="aui-grid-label">购物车</div>
+                </div>
+            </div>
+        </section>
+  </body>
+  <script type="text/javascript" src="../script/api.js"></script>
+  <script type="text/javascript">
+      apiready = function(){
+        api.openPopoverWin({
+            width: 480,
+            height: 400,
+            name: 'page1',
+            url: './page1.html'
+        });
+        $api.addCls(el, 'class');
+        const x = api.require("listView");
+
+        x.reloadData({
+            data:[{title:'标题',subTitle:'子标题，说明文字'},
+                {title:'标题',subTitle:'子标题'},
+                {title:'标题',subTitle:'子标题，说明文字'},
+                {title:'标题',subTitle:'子标题，说明文字。'},
+                {title:'标题',subTitle:'子标题'},
+                {title:'标题',subTitle:'子标题，说明文字'},
+                {title:'标题',subTitle:'子标题，说明文字'},
+                {title:'标题',subTitle:'子标题'},
+                {title:'标题',subTitle:'子标题，说明文字'},
+                {title:'标题',subTitle:'子标题，说明文字'},
+                {title:'标题',subTitle:'子标题，说明文字'}]
+        });
+
+      };
+  </script>
+  </html>
